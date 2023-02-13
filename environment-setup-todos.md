@@ -16,6 +16,12 @@ sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbe
 ---
 # Desktop Environment
 - [x] Restore dconf 
+```shell
+dconf reset -f /
+```
+```shell
+dconf load / < ~/dotfiles/dconf/dcon
+```
 - [x] Sanity Checks
 ---
 # Ubuntu Software Center
@@ -53,24 +59,23 @@ rm ~/.local/share/tmux-powerline/segments/date.sh
 ```
 - [x] stow tmux-powerline
 # Fish
-- [ ] make fish the default shell
+- [x] make fish the default shell
 ```shell
 chsh -s /usr/bin/fish
 ```
-- [ ] reboot
-- [ ] make sure that fish stow directory contains only user-generated files
-- [ ] stow fish
-- [ ] install colorls
+- [x] reboot, then make sure it's been changed
 ```shell
-sudo gem install colorls
-```
-- [ ] install tmuxinator
+echo $SHELL
+```     
+- [x] make sure that fish stow directory contains only user-generated files
+- [x] stow fish
+- [x] install some gem packages
 ```shell
-sudo gem install tmuxinator
+sudo gem install colorls tmuxinator
 ```
-- [ ] stow tmuxinator
-- [ ] stow colorls
-- [ ] install fisher, nvm, npm, node
+- [x] stow tmuxinator
+- [x] stow colorls
+- [x] install fisher, nvm, npm, node
 ```shell
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fisher install jorgebucaran/nvm.fish
@@ -78,52 +83,69 @@ nvm install lts
 set --universal nvm_default_version v16.15.0
 ```
 [More Details](https://rmdhnreza.my.id/install-nvm-on-fish-shell/)
-- [ ] reboot
-- [ ] install tldr
+- [x] reboot
+- [x] install tldr
 ```shell
 npm install  -g tldr
 ```
-- [ ] Install some Fisher Packages
+- [x] Install some Fisher Packages
 ```shell
 
 fisher install mattmc3/cd-ls.fish edc/bass sentriz/fish-pipenv jethrokuan/z 
 ```
-- [ ] install omf
+- [x] install omf
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 ```
-- [ ] change omf theme
+- [x] change omf theme
 ```shell
 omf install agnoster
 omf theme agnoster
 ```
 ---
 # Neovim
-- [ ] download latest nvim.deb in ~/Downloads/tarballs
-- [ ] stow neovim
-- [ ] vim -c PackerSync
-- [ ] install stylua
+- [x] install nvim
+```shell
+sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
+```
+
+- [x] stow neovim
+- [x] nvim -c PackerSync
+---
+# MongoDb
+- [ ] Insall
+[guide](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04)
+---
+# Postman
+- [ ] Installation
+```shell
+curl https://gist.githubusercontent.com/SanderTheDragon/1331397932abaa1d6fbbf63baed5f043/raw/postman-deb.sh | sh
+```
 ---
 # Vagrant
 - [ ] install vagrant
-- [ ] download vagrant-vmware-utility .. it's already downloaded at /media/tarikwaleed/Data/linux-tools/tarballs
+>:bulb: check that it's located in the right path as defined in fishconfiguration /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin
+- [ ] Download vagrant-vmware-utility .. it's already downloaded at /media/tarikwaleed/Data/linux-tools/tarballs
+[Guide](https://developer.hashicorp.com/vagrant/docs/providers/vmware/vagrant-vmware-utility)
 - [ ] install the previously installed plugin
+```shell
+vagrant plugin install vagrant-vmware-desktop
+```
 ---
 # Docker
 - [ ] Download the 6 .deb packages(amd64)
-- [ ] xtract them
+[Download from here](https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/)
+- [ ] Extract them using `sudo dpkg -i`
 ---
 # MySQL
 - [ ] install
+[Guide](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 - [ ] mysql-shell
+[Guide](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)
 ---
 # VmWare Player
 - [ ] ownload
-- [ ] f ran into problems
-- [ ] f ran into problems
----
-# MongoDb
-- [ ] ttps://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04
----
-# Postman
-- [ ] nstallation
+[Guide](https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-PLAYER-1700&productId=1377&rPId=97014)   
+- [ ] if ran into problems
+[Guide](https://kb.vmware.com/s/article/2146460)
+[Guide](https://communities.vmware.com/t5/VMware-Workstation-Player/ubuntu-22-04-install-vm-workstation-error/td-p/2905277)
