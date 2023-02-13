@@ -54,22 +54,49 @@ rm ~/.local/share/tmux-powerline/segments/date.sh
 - [x] stow tmux-powerline
 # Fish
 - [ ] make fish the default shell
+```shell
+chsh -s /usr/bin/fish
+```
 - [ ] reboot
 - [ ] make sure that fish stow directory contains only user-generated files
 - [ ] stow fish
 - [ ] install colorls
+```shell
+sudo gem install colorls
+```
 - [ ] install tmuxinator
+```shell
+sudo gem install tmuxinator
+```
 - [ ] stow tmuxinator
 - [ ] stow colorls
 - [ ] install fisher, nvm, npm, node
+```shell
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install jorgebucaran/nvm.fish
+nvm install lts
+set --universal nvm_default_version v16.15.0
+```
+[More Details](https://rmdhnreza.my.id/install-nvm-on-fish-shell/)
 - [ ] reboot
 - [ ] install tldr
-- [ ] install cd-ls
-- [ ] install bass
-- [ ] install fish-pipenv
-- [ ] install z 
+```shell
+npm install  -g tldr
+```
+- [ ] Install some Fisher Packages
+```shell
+
+fisher install mattmc3/cd-ls.fish edc/bass sentriz/fish-pipenv jethrokuan/z 
+```
 - [ ] install omf
+```shell
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+```
 - [ ] change omf theme
+```shell
+omf install agnoster
+omf theme agnoster
+```
 ---
 # Neovim
 - [ ] download latest nvim.deb in ~/Downloads/tarballs
