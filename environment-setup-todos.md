@@ -5,6 +5,9 @@
 - [x] sign-in to firefox
 - [x] setup extensions
 - [x] about:config -> layout.css.devPixelsPerPx=2.0
+**Touchpad**
+- [ ] 
+
 ---
 # Aptitude
 - [x] `sudo apt-get update`
@@ -12,56 +15,34 @@
 - [x] `sudo apt-get install dconf-editor`
 - [x] `sudo apt-get install git`
 - [x] `sudo apt-get install stow`
+- [x] `sudo apt-get install xserver-xorg-input-synaptics`
+- [ ] `sudo apt-get install mlocate`
+- [ ] `sudo apt-get install xclip`
+- [ ] `sudo apt-get install tmux`
+- [ ] `sudo apt-get install fish`
+- [ ] `sudo apt-get install ruby-full`
+- [ ] `sudo apt-get install rbenv`
 ---
 # Desktop Environment
 - [x] Restore dconf 
+- [x] Sanity Checks
 ---
 # Ubuntu Software Center
 - [x] slack
 - [x] Vscode
 - [x] Teams for linux
----
-# Sanity Checks
-**Gnome Tweaks**
-- [x] keyboard&mouse -> Additional keyboard layout -> ctlr position->swap ctrl&caps
-- [x] keyboard&mouse -> Mouse click emulation -> Fingers
-- [x] appearance -> adwatia(default)
-- [x] startup Applications
-- [x] extensions -> Workspace Switcher
-- [x] top Bar
-- [x] windows -> window focus 
-- [x] workspaces -> span displays
-**Gnome Settings**
-- [x] screen resolution scale 125%
-- [x] displays order
-- [x] Date and time
-- [x] mouse speed
-- [x] screen resolution scale 125%
-- [x] displays order
-- [x] night Light
-- [x] repeat Keys
-- [x] user phooto
-- [x] power settigns
-- [x] background image
-- [x] cursor size
+- [x] Gnome Tweaks
+
 ---
 # Git
 - [x] configure git
 - [x] clone dotfiles
-- [ ] create new github access token
----
-# Stowing
-- [ ] stow xmodmap
-- [ ] stow xresources
+- [x] create new github access token
 ---
 # Terminal Emulator
-- [ ] change terminal font size and color scheme
-- [ ] install a nerd font from dotfiles (Cousine)
-# Independant Packages
-- [ ] install mlocate
-- [ ] install xclip
+- [x] Install a nerd font from dotfiles (Cousine)
+- [x] font: cousine18, theme:Tango Light
 # Tmux
-- [ ] install tmux
 - [ ] install tpm
 - [ ] install tmux-powerline in ~/.local/share
 - [ ] stow tmux
@@ -70,13 +51,10 @@
 - [ ] edit ~/.local/share/tmux-powerline/segments/time.sh
 - [ ] edit ~/.local/share/tmux-powerline/segments/date.sh
 # Fish
-- [ ] install fish
 - [ ] make fish the default shell
 - [ ] reboot
 - [ ] make sure that fish stow directory contains only user-generated files
 - [ ] stow fish
-- [ ] install ruby-full
-- [ ] install rbenv
 - [ ] install colorls
 - [ ] install tmuxinator
 - [ ] stow tmuxinator

@@ -15,7 +15,7 @@
 **reset**
 `dconf reset -f /`
 **restore**
-`dconf load / < dconf-settings`
+`dconf load / < ~/dotfiles/dconf/dcon`
 
 ---
 # Dash to Dock
