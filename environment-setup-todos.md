@@ -5,23 +5,14 @@
 - [x] sign-in to firefox
 - [x] setup extensions
 - [x] about:config -> layout.css.devPixelsPerPx=2.0
-**Touchpad**
-- [ ] 
-
 ---
 # Aptitude
-- [x] `sudo apt-get update`
-- [x] `sudo apt-get upgrade`
-- [x] `sudo apt-get install dconf-editor`
-- [x] `sudo apt-get install git`
-- [x] `sudo apt-get install stow`
-- [x] `sudo apt-get install xserver-xorg-input-synaptics`
-- [ ] `sudo apt-get install mlocate`
-- [ ] `sudo apt-get install xclip`
-- [ ] `sudo apt-get install tmux`
-- [ ] `sudo apt-get install fish`
-- [ ] `sudo apt-get install ruby-full`
-- [ ] `sudo apt-get install rbenv`
+- [x] `sudo apt-get update && sudo apt-get upgrade`
+
+- [x] Packages
+```bash
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv -y
+```
 ---
 # Desktop Environment
 - [x] Restore dconf 
@@ -43,13 +34,24 @@
 - [x] Install a nerd font from dotfiles (Cousine)
 - [x] font: cousine18, theme:Tango Light
 # Tmux
-- [ ] install tpm
-- [ ] install tmux-powerline in ~/.local/share
-- [ ] stow tmux
-- [ ] m ~/.local/share/tmux-powerline/themes/default.sh
-- [ ] stow tmux-powerline
-- [ ] edit ~/.local/share/tmux-powerline/segments/time.sh
-- [ ] edit ~/.local/share/tmux-powerline/segments/date.sh
+- [x] install tpm
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+[More Details](https://github.com/tmux-plugins/tpm)
+- [x] install tmux-powerline 
+```bash
+git clone https://github.com/erikw/tmux-powerline.git ~/.local/share/tmux-powerline
+```
+[More Details](https://github.com/erikw/tmux-powerline)
+- [x] stow tmux
+- [x] Remove some files before stow
+```bash
+rm ~/.local/share/tmux-powerline/themes/default.sh
+rm ~/.local/share/tmux-powerline/segments/time.sh
+rm ~/.local/share/tmux-powerline/segments/date.sh
+```
+- [x] stow tmux-powerline
 # Fish
 - [ ] make fish the default shell
 - [ ] reboot
