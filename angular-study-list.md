@@ -10,3 +10,7 @@
 - [ ] @HostListener
 - [ ] decorator design pattern
 - [ ] @output property decorator
+- [ ] Examples on using pipes on credit card value and SSN input
+- [ ] 
+
+
