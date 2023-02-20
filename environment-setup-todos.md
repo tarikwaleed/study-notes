@@ -5,8 +5,10 @@
 - [x] sign-in to firefox
 - [x] setup extensions
 - [x] about:config -> layout.css.devPixelsPerPx=2.0
+- [ ] install FiraCode Font
+[Guide](https://github.com/tonsky/FiraCode)
 ---
-# Aptitude
+# Apt
 - [x] `sudo apt-get update && sudo apt-get upgrade`
 
 - [x] Packages
