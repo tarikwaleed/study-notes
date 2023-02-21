@@ -1,0 +1,11 @@
+- [x] proxy server
+- [x] reverse proxy server
+- [ ] load balancer
+- [ ] redis
+- [ ] linux namespaces
+- [ ] linux cgroups
+- [ ] docker containerd
+- [ ] docker machine
+- [ ] docker compose
+- [ ] tty?
+
