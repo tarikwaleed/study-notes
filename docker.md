@@ -1,3 +1,13 @@
+# Cheat Sheet
+
+- Get the IP of the container
+```shell
+docker inspect app1 | grep Address
+```
+**OR**
+```shell
+docker container inspect [container_id] -f '{{.Address}}'
+```
 - To filter the `docker inspect` JSON output
 ```shell
 docker container inspect [container_id] -f '{{.property.property}}'
@@ -6,30 +16,60 @@ docker container inspect [container_id] -f '{{.property.property}}'
 ```shell
 docker container inspect [container_id] -f '{{.State.Status}}'
 ```
+# Guides
+## Docker Volumes
+### Three types of docker volumes
+:one: Host volumes
+```shell
+docker run -v /path/on/host:/path/on/container
+```
+:two: Anonymous volumes
+```shell
+docker run -v /path/on/container
+```
+:three: Named volumes (Recommended)
+```shell
+docker run -v name:/path/on/container
+```
+### To mount a volume to a container
 
-**try out those commands**
+:one: Create a volume, and try to specify an expressive name. For example, i'll create a volume to persist `mysql` database data.
 ```shell
-FROM ubuntu:latest
-RUN mkdir /omar-dir/
-# WORKDIR /omar-dir
-RUN touch omar2.txt
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends mysql-clientRUN rm -rf /var/lib/apt/lists/*USER OMAR
-RUN touch /omar2.txt
-RUN echo "this is word from docker file." >> omar2.txt
-RUN cat /omar2.txt
-COPY ./omar.txt .
-RUN cat omar-dir/omar.txtADD https://drive/mydrive/omar.txt /# ENTRYPOINT ["mysql"]
+docker volume create mysql-volume
 ```
+:two: Attach that volume to the mysql server container
 ```shell
-docker container  run --detach --name mariadb-container --env MARIADB_ROOT_PASSWORD=1234  mariadb:latest
+docker run 
+--name mysql-with-volume
+-p 3306:3306
+-e MYSQL_ROOT_PASSWORD=my-secret-pass,
+OTHER_EVN_VARIABLE=other_value
+-d
+--mount
+source=mysql-volume,
+target=/var/lib/mysql
+mysql
 ```
+### Using a bind mount
+We're usually using this method to sync files between the host and the container.
 ```shell
-docker container run -d --name mariadb-container -v /salamaNew:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=1234 mariadb:latest
+docker run 
+--name mysql-with-volume
+-p 3306:3306
+-e MYSQL_ROOT_PASSWORD=my-secret-pa
+-d
+--mount
+type=bind,
+source="$(pwd)/directory-you-want-to-sync
+target=/var/lib/mysql
+mysql
 ```
-```shell
-docker container run -d --name mywebsite2 -p 80:80 -v /path:/usr/share/nginx/html nginx 
-```
+
+
+
+
+
+
 
 
 

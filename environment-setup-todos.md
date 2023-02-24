@@ -13,7 +13,7 @@
 
 - [x] Packages
 ```bash
-sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv -y
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 -y
 ```
 ---
 # Desktop Environment
@@ -146,8 +146,18 @@ vagrant plugin install vagrant-vmware-desktop
 [Guide](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)
 ---
 # VmWare Player
-- [ ] ownload
+- [ ] Download
 [Guide](https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-PLAYER-1700&productId=1377&rPId=97014)   
+
+- [ ] Add execution permision to the dowonloaded `.bundle` file
+
+```shell
+sudo chmod a+x VMware-Player-6.0.3-1895310.x86_64.bundle
+```
+- [ ] execute the .bundle file
+```shell
+sudo ./VMware-Player-6.0.3-1895310.x86_64.bundle
+```
 - [ ] if ran into problems
 [Guide](https://kb.vmware.com/s/article/2146460)
 [Guide](https://communities.vmware.com/t5/VMware-Workstation-Player/ubuntu-22-04-install-vm-workstation-error/td-p/2905277)
