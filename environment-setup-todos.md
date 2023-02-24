@@ -158,6 +158,27 @@ sudo chmod a+x VMware-Player-6.0.3-1895310.x86_64.bundle
 ```shell
 sudo ./VMware-Player-6.0.3-1895310.x86_64.bundle
 ```
-- [ ] if ran into problems
+## If you ran into problems
+### Problem1
+>"Cannot open /dev/vmmon: No such file or directory" error when powering on a VM (2146460)
+
+**solution**
 [Guide](https://kb.vmware.com/s/article/2146460)
+
+```shell
+openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=VMware/"
+```
+```shell
+sudo /usr/src/linux-headers-(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vmmon)
+```
+```shell
+sudo /usr/src/linux-headers-(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vmnet)
+```
+
+```shell
+sudo mokutil --import MOK.der
+```
+
+
+### Problem2
 [Guide](https://communities.vmware.com/t5/VMware-Workstation-Player/ubuntu-22-04-install-vm-workstation-error/td-p/2905277)
