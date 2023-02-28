@@ -11,3 +11,15 @@
 - [ ] update state directly without using useState()
 - [ ] Redux
 - [ ] Hooks
+- [ ] undraw.co
+- [x] fakestoreapi
+- [ ] reac-toastify
+- [x] axios
+- [ ] react-infinity-scroll
+- [ ] react-paginate
+- [ ] swagger
+- [x] CLDD
+- [ ] rc-rate
+- [ ] useParam( )
+- [ ] useHistory()
+- [x] whot to do when the request is pending?-> show spinner
