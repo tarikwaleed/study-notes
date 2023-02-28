@@ -4,7 +4,7 @@
 - [ ] banana operator
 - [ ] trackBy function
 - [x] `[hidden]` vs. `ngIf`
-- [ ] `ng-template` vs. `ng-container`
+- [ ] `ng-template` vs. `ng-container` vs. `ng-content` freeCodeCamp Article
 - [x] `ng-class` vs. `class`
 - [ ] class decorator vs. method decorator vs. property decorator
 - [ ] @HostListener
@@ -15,6 +15,12 @@
 - [ ] Study All Lifecycle Hooks
 - [ ] constructor vs. ngOnInit
 - [ ] BEM Naming convention
+- [ ] Directives vs. property binding
+- [ ] event emmiter
+- [ ] MVVM Architecture
+- [ ] @viewchild decorator function
+
+
 
 
 

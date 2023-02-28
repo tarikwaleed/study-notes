@@ -1,0 +1,13 @@
+- [ ] virtual dom
+- [ ] Single page application
+- [ ] webpack
+- [ ] babel
+- [ ] ES6 extract
+- [ ] class component vs. function component
+- [ ] JSX elements
+- [ ] conditional rendering
+- [ ] ES6 destructure
+- [ ] don't mutate the state
+- [ ] update state directly without using useState()
+- [ ] Redux
+- [ ] Hooks
