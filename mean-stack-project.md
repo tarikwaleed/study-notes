@@ -1,0 +1,7 @@
+- [ ] ng-content
+- [ ] primeNg
+- [ ] lazy loading
+- [ ] feature module
+- [ ] lazy loading ngModules
+- [ ] mongo compass
+- [ ] mongo atlas
