@@ -25,6 +25,7 @@
 - [ ] `providedIn:'root'` vs `providedIn:'module-name'` `providedIn:'any'` and when to use which
 - [ ] singleton design pattern
 - [ ] `Eager loading` vs. `lazy loading`
+- [ ] caching in angular
 
 
 
