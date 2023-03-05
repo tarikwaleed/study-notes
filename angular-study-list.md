@@ -19,6 +19,12 @@
 - [ ] event emmiter
 - [ ] MVVM Architecture
 - [ ] @viewchild decorator function
+- [ ] Repository design pattern
+- [ ] dependency injection design pattern
+- [ ] inversion of control concept
+- [ ] `providedIn:'root'` vs `providedIn:'module-name'` `providedIn:'any'` and when to use which
+- [ ] singleton design pattern
+- [ ] `Eager loading` vs. `lazy loading`
 
 
 
