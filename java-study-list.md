@@ -1,0 +1,13 @@
+- [ ] compiled vs interpreted
+- [ ] `jvm` vs. `jdk` vs `jre`
+- [ ] how java applets works?
+- [ ] why there are no pointers in java?
+- [ ] RMI- Remote method invocation
+- [ ] remote procedure calls
+- [ ] `Dynamic linking` vs. `Static linking`
+- [ ] dll
+- [ ] is C static or dynamic linking
+- [ ] abstraction
+- [ ] levels of abstraction
+- [ ] overloading
+- [ ] overriding

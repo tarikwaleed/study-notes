@@ -115,8 +115,33 @@ sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
 - [x] nvim -c PackerSync
 ---
 # MongoDb
-- [ ] Insall
+```shell
+curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+```
+```shell
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+```
+```shell
+sudo apt update
+```
+```shell
+sudo apt install mongodb-org
+```
+```shell
+systemctl status mongod
+```
+
+```shell
+rm /tmp/mongodb-27017.sock
+```
+# npm packages
+```shell
+npm install -g express-generator nodemon
+```
+
+
 [guide](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04)
+
 ---
 # Postman
 - [ ] Installation
@@ -145,6 +170,21 @@ vagrant plugin install vagrant-vmware-desktop
 - [ ] mysql-shell
 [Guide](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)
 ---
+# Httpie
+```shell
+curl -SsL https://packages.httpie.io/deb/KEY.gpg | apt-key add -
+```
+```shell
+curl -SsL -o /etc/apt/sources.list.d/httpie.list https://packages.httpie.io/deb/httpie.list
+```
+```shell
+apt update
+```
+```shell
+apt install httpie
+```
+
+
 # VmWare Player
 - [ ] Download
 [Guide](https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-PLAYER-1700&productId=1377&rPId=97014)   
