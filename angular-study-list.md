@@ -26,6 +26,11 @@
 - [ ] singleton design pattern
 - [ ] `Eager loading` vs. `lazy loading`
 - [ ] caching in angular
+- [ ] subjects
+- [ ] observables
+- [ ] Guards
+- [ ] ngrx/store
+
 
 
 
