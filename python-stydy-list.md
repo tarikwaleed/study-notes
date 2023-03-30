@@ -1,0 +1,13 @@
+- [ ] decorators
+- [ ] classmethod
+- [ ] static method
+- [ ] @property
+- [ ] @namesetter
+- [ ] yield
+- [ ] generators
+- [ ] map,filter,reduce,enumerate,zip,counter, ...
+- [ ] lambda function
+- [ ] advanced list comperhension
+- [ ] iterators
+- [ ] why there is no overloading in python
+- [ ] dunder methods
