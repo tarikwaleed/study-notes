@@ -167,8 +167,65 @@ vagrant plugin install vagrant-vmware-desktop
 # MySQL
 - [ ] install
 [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+**steps**
+```shell
+sudo apt update
+```
+```shell
+sudo apt install mysql-server
+```
+```shell
+sudo systemctl start mysql.service
+```
+```shell
+sudo mysql
+```
+```shell
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+change 'password' with your password, then `exit`
+
+```shell
+sudo mysql_secure_installation
+```
+```shell
+CREATE USER 'tarikwaleed'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+```shell
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, INDEX, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'tarikwaleed'@'localhost' WITH GRANT OPTION;
+```
+```shell
+mysql -u tarikwaleed -p
+```
+
+
+
+
+
+
 - [ ] mysql-shell
 [Guide](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)
+**steps**
+```shell
+sudo apt-get update
+```
+```shell
+sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/mysql-apt-config_w.x.y-z_all.deb
+```
+
+```shell
+sudo apt-get update
+```
+```shell
+sudo apt-get install mysql-shell
+```
+
+
+
+
+
+
 ---
 # Httpie
 ```shell
