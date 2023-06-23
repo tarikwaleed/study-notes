@@ -5,8 +5,22 @@
 - [x] sign-in to firefox
 - [x] setup extensions
 - [x] about:config -> layout.css.devPixelsPerPx=2.0
-- [ ] install FiraCode Font
+- [x] install FiraCode Font
 [Guide](https://github.com/tonsky/FiraCode)
+- [x] Mount "Data" Partition
+- Get the id of the partition
+```shell
+sudo blkid
+```
+- put this line at the end of `/etc/fstab` file
+```shell
+UUID=68342E8E342E5F76 /media/tarik/Data ntfs defaults 0 0
+```
+```shell
+sudo mount -a
+```
+
+
 ---
 # Apt
 - [x] `sudo apt-get update && sudo apt-get upgrade`
@@ -15,6 +29,9 @@
 ```bash
 sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 -y
 ```
+
+
+
 ---
 # Desktop Environment
 - [x] Restore dconf 
@@ -25,12 +42,21 @@ dconf reset -f /
 dconf load / < ~/dotfiles/dconf/dcon
 ```
 - [x] Sanity Checks
+- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
+- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
 ---
+
+
+
+
 # Ubuntu Software Center
 - [x] slack
 - [x] Vscode
 - [x] Teams for linux
 - [x] Gnome Tweaks
+
+
+
 
 ---
 # Git
@@ -38,9 +64,19 @@ dconf load / < ~/dotfiles/dconf/dcon
 - [x] clone dotfiles
 - [x] create new github access token
 ---
+
+
+
+
 # Terminal Emulator
 - [x] Install a nerd font from dotfiles (Cousine)
 - [x] font: cousine18, theme:Tango Light
+---
+
+
+
+
+
 # Tmux
 - [x] install tpm
 ```bash
@@ -60,6 +96,11 @@ rm ~/.local/share/tmux-powerline/segments/time.sh
 rm ~/.local/share/tmux-powerline/segments/date.sh
 ```
 - [x] stow tmux-powerline
+---
+
+
+
+
 # Fish
 - [x] make fish the default shell
 ```shell
@@ -114,6 +155,7 @@ sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
 - [x] stow neovim
 - [x] nvim -c PackerSync
 ---
+#PHP
 # MongoDb
 ```shell
 curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
