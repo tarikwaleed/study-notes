@@ -20,6 +20,17 @@ UUID=68342E8E342E5F76 /media/tarik/Data ntfs defaults 0 0
 sudo mount -a
 ```
 
+- [x] Fix Read-only filesystem
+```
+To turn-off fast-boot on windows 10 do the following:
+    Go to Control Panel.
+    Click Power Options.
+    Choose "what the power buttons do."
+    Click "Change settings that are currently unavailable."
+    Find and uncheck "Turn on fast startup."
+    Save changes.
+    Shutdown and boot linux.
+```
 
 ---
 # Apt
@@ -42,8 +53,8 @@ dconf reset -f /
 dconf load / < ~/dotfiles/dconf/dcon
 ```
 - [x] Sanity Checks
-- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
-- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
+- [x] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
+- [x] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
 ---
 
 
@@ -146,6 +157,10 @@ omf install agnoster
 omf theme agnoster
 ```
 ---
+
+
+
+
 # Neovim
 - [x] install nvim
 ```shell
@@ -155,57 +170,8 @@ sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
 - [x] stow neovim
 - [x] nvim -c PackerSync
 ---
-#PHP
-# MongoDb
-```shell
-curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
-```
-```shell
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
-```
-```shell
-sudo apt update
-```
-```shell
-sudo apt install mongodb-org
-```
-```shell
-systemctl status mongod
-```
-
-```shell
-rm /tmp/mongodb-27017.sock
-```
-# npm packages
-```shell
-npm install -g express-generator nodemon
-```
 
 
-[guide](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04)
-
----
-# Postman
-- [ ] Installation
-```shell
-curl https://gist.githubusercontent.com/SanderTheDragon/1331397932abaa1d6fbbf63baed5f043/raw/postman-deb.sh | sh
-```
----
-# Vagrant
-- [ ] install vagrant
->:bulb: check that it's located in the right path as defined in fishconfiguration /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin
-- [ ] Download vagrant-vmware-utility .. it's already downloaded at /media/tarikwaleed/Data/linux-tools/tarballs
-[Guide](https://developer.hashicorp.com/vagrant/docs/providers/vmware/vagrant-vmware-utility)
-- [ ] install the previously installed plugin
-```shell
-vagrant plugin install vagrant-vmware-desktop
-```
----
-# Docker
-- [ ] Download the 6 .deb packages(amd64)
-[Download from here](https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/)
-- [ ] Extract them using `sudo dpkg -i`
----
 # MySQL
 - [ ] install
 [Guide](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
@@ -233,19 +199,12 @@ sudo mysql_secure_installation
 ```shell
 CREATE USER 'tarikwaleed'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
-
 ```shell
 GRANT CREATE, ALTER, DROP, INSERT, UPDATE, INDEX, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'tarikwaleed'@'localhost' WITH GRANT OPTION;
 ```
 ```shell
 mysql -u tarikwaleed -p
 ```
-
-
-
-
-
-
 - [ ] mysql-shell
 [Guide](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)
 **steps**
@@ -264,10 +223,136 @@ sudo apt-get install mysql-shell
 ```
 
 
+---
+# Apache
+```shell
+sudo apt install apache2
+sudo ufw app list
+sudo ufw allow 'Apache'
+```
+**Setting up a VirtualHost**
+
+
+
+---
+
+
+# PHP
+```shell
+sudo add-apt-repository ppa:ondrej/php
+```
+```shell
+sudo apt install --no-install-recommends php8.1
+```
+```shell
+sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+```
+**Setting up Composer**
+```shell
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+```
+```shell
+sudo mv composer.phar /usr/local/bin/composer
+```
 
 
 
 
+---
+
+# Python
+
+- Python3 is already installed
+
+**Virtualenv**
+```shell
+pip3 install virtualenv
+```
+```shell
+virtualenv --version
+```
+```shell
+virtualenv project-name-env
+```
+```shell
+source project-name-env/bin/activate.fish
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# MongoDb
+```shell
+curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+```
+```shell
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+```
+```shell
+sudo apt update
+```
+```shell
+sudo apt install mongodb-org
+```
+```shell
+systemctl status mongod
+```
+
+```shell
+rm /tmp/mongodb-27017.sock
+```
+---
+
+
+
+
+# npm packages
+```shell
+npm install -g express-generator nodemon
+```
+[guide](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04)
+
+---
+
+
+# Postman
+- [ ] Installation
+```shell
+curl https://gist.githubusercontent.com/SanderTheDragon/1331397932abaa1d6fbbf63baed5f043/raw/postman-deb.sh | sh
+```
+---
+
+
+
+# Vagrant
+- [ ] install vagrant
+>:bulb: check that it's located in the right path as defined in fishconfiguration /media/tarikwaleed/Data/linux-tools/tarballs/opt/vagrant/bin
+- [ ] Download vagrant-vmware-utility .. it's already downloaded at /media/tarikwaleed/Data/linux-tools/tarballs
+[Guide](https://developer.hashicorp.com/vagrant/docs/providers/vmware/vagrant-vmware-utility)
+- [ ] install the previously installed plugin
+```shell
+vagrant plugin install vagrant-vmware-desktop
+```
+---
+
+
+
+# Docker
+- [ ] Download the 6 .deb packages(amd64)
+[Download from here](https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/)
+- [ ] Extract them using `sudo dpkg -i`
 ---
 # Httpie
 ```shell
