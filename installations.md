@@ -48,3 +48,12 @@ sudo dpkg -P package_name
 ```shell
 sudo snap remove --purge pkg_name
 ```
+# How to uninstall a .deb packge
+-search for the package
+```shell
+dpkg --list|grep package_name
+```
+- remove it 
+```shell
+sudo dpkg -r package_name
+```
