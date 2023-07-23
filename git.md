@@ -14,5 +14,11 @@ git branch | grep -v "master" | xargs git branch -D
 ```shell
 git branch | grep -vE "master|develop" | xargs git branch -D
 ```
+- show content of specific file in prevouis commits
+```shell
+git cat-file -p HEAD~4:registration/admin.py
+git cat-file -p c22dd60:registration/admin.py
+```
+
 
 
