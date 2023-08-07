@@ -12,8 +12,7 @@
 - Documentation
 - Linting and Code Formatting
 - IDE and Editor Integration
-
-
+___
 # Best practices to document your code
 - Docstrings
 - Module-Level Comments
@@ -25,3 +24,6 @@
 - Type Annotations
 - Use Jupyter Notebooks for Tutorials
 - Version Control and Code Hosting Platform
+___
+# Topics to understand
+- [ ] Context managers `__enter__` and `__exit__`

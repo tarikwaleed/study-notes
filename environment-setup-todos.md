@@ -352,7 +352,14 @@ vagrant plugin install vagrant-vmware-desktop
 # Docker
 - [ ] Download the 6 .deb packages(amd64)
 [Download from here](https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/)
-- [ ] Extract them using `sudo dpkg -i`
+- [ ] Extract them using `sudo dpkg -i`, in the following order:
+- docker-ce-cli
+- container.io
+- docker-ce
+- docker-compose-plugin
+- docker-scan-plugin
+- docker-ce-rootless
+
 ---
 # Httpie
 ```shell
