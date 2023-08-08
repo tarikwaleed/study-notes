@@ -27,3 +27,12 @@ ___
 ___
 # Topics to understand
 - [ ] Context managers `__enter__` and `__exit__`
+___
+# Tips
+- To load .env
+```py
+from dotenv import find_dotenv, load_dotenv
+
+load_dotenv()
+load_dotenv(find_dotenv(), override=True)
+```

@@ -64,6 +64,18 @@ source="$(pwd)/directory-you-want-to-sync
 target=/var/lib/mysql
 mysql
 ```
+---
+# Oracle Databse
+- Run the oracle database from this tutorial [HERE](https://mkc110891.medium.com/oracle-19c-on-ubuntu-18-04-docker-6898cd2916f9)
+```shell
+docker  run --name oracle19c --network host -p 1521:1521 -p 5500:5500 -v /u01/oracle:/opt/oracle/oradata oracle/database:19.3.0-ee
+```
+- Exec into the container
+```shell
+docker exec -ti oracle19c sqlplus system/oracle@orclpdb1
+```
+
+
 
 
 
