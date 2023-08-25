@@ -160,7 +160,7 @@ set --universal nvm_default_version v16.15.0
 - [ ] reboot
 - [ ] install tldr
 ```shell
-npm install  -g tldr
+sudo npm install  -g tldr
 ```
 - [ ] Install some Fisher Packages
 ```shell
@@ -174,6 +174,9 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 - [ ] change omf theme
 ```shell
 omf install agnoster
+```
+
+```shell
 omf theme agnoster
 ```
 ---
