@@ -190,8 +190,17 @@ omf theme agnoster
 sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
 ```
 
-- [ ] stow neovim
-- [ ] nvim -c PackerSync
+- [ ] run
+```shell
+stow neovim
+```
+
+- [ ] Run
+```shell
+nvim -c PackerSync
+
+```
+
 ---
 
 
