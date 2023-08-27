@@ -267,6 +267,11 @@ sudo mv composer.phar /usr/local/bin/composer
 
 - Python3 is already installed
 
+**pip3**
+```shell
+sudo apt-get install python3-pip
+```
+
 **Virtualenv**
 ```shell
 pip3 install virtualenv
