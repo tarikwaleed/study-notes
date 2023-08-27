@@ -1,13 +1,14 @@
 # Basics
-- [x] show password astrisks
-- [x] mount Data partition
+- [ ] show password astrisks
+- [ ] mount Data partition
 **Firefox**
 - [x] sign-in to firefox
 - [x] setup extensions
 - [x] about:config -> layout.css.devPixelsPerPx=2.0
 - [x] install FiraCode Font
 [Guide](https://github.com/tonsky/FiraCode)
-- [x] Mount "Data" Partition
+- [ ] change font of the terminal
+- [ ] Mount "Data" Partition
 - Get the id of the partition
 ```shell
 sudo blkid
@@ -20,7 +21,7 @@ UUID=68342E8E342E5F76 /media/tarik/Data ntfs defaults 0 0
 sudo mount -a
 ```
 
-- [x] Fix Read-only filesystem
+- [ ] Fix Read-only filesystem
 ```
 To turn-off fast-boot on windows 10 do the following:
     Go to Control Panel.
@@ -34,54 +35,59 @@ To turn-off fast-boot on windows 10 do the following:
 
 ---
 # Apt
-- [x] `sudo apt-get update && sudo apt-get upgrade`
+- [ ] `sudo apt-get update && sudo apt-get upgrade`
 
-- [x] Packages
+- [ ] Packages
 ```bash
-sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 -y
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 gnome-shell-extension-manager -y
 ```
 
 
 
 ---
 # Desktop Environment
-- [x] Restore dconf 
+- [ ] Restore dconf 
 ```shell
 dconf reset -f /
 ```
 ```shell
 dconf load / < ~/dotfiles/dconf/dcon
 ```
-- [x] Sanity Checks
-- [x] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
-- [x] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
+- [ ] Sanity Checks
+- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
+- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
 ---
 
 
 
 
 # Ubuntu Software Center
-- [x] slack
-- [x] Vscode
-- [x] Teams for linux
-- [x] Gnome Tweaks
+- [ ] slack
+- [ ] Vscode
+- [ ] Teams for linux
+- [ ] Gnome Tweaks
 
 
 
 
 ---
 # Git
-- [x] configure git
-- [x] clone dotfiles
-- [x] create new github access token
+- [ ] configure git
+```shell
+git config --global user.name "tarikwaleed"
+git config --global user.email "tarikwaleed.tech@gmail.com"
+```
+
+- [ ] clone dotfiles
+- [ ] create new github access token
 ---
 
 
 
 
 # Terminal Emulator
-- [x] Install a nerd font from dotfiles (Cousine)
-- [x] font: cousine18, theme:Tango Light
+- [ ] Install a nerd font from dotfiles (Cousine)
+- [ ] font: cousine18, theme:Tango Light
 ---
 
 
@@ -89,71 +95,88 @@ dconf load / < ~/dotfiles/dconf/dcon
 
 
 # Tmux
-- [x] install tpm
+- [ ] install tpm
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 [More Details](https://github.com/tmux-plugins/tpm)
-- [x] install tmux-powerline 
+- [ ] install tmux-powerline 
 ```bash
 git clone https://github.com/erikw/tmux-powerline.git ~/.local/share/tmux-powerline
 ```
 [More Details](https://github.com/erikw/tmux-powerline)
-- [x] stow tmux
-- [x] Remove some files before stow
+- [ ] stow tmux
+- [ ] Remove some files before stow
 ```bash
 rm ~/.local/share/tmux-powerline/themes/default.sh
 rm ~/.local/share/tmux-powerline/segments/time.sh
 rm ~/.local/share/tmux-powerline/segments/date.sh
 ```
-- [x] stow tmux-powerline
+- [ ] stow tmux-powerline
 ---
 
 
 
 
 # Fish
-- [x] make fish the default shell
+- [ ] make fish the default shell
 ```shell
 chsh -s /usr/bin/fish
 ```
-- [x] reboot, then make sure it's been changed
+- [ ] reboot, then make sure it's been changed
 ```shell
 echo $SHELL
 ```     
-- [x] make sure that fish stow directory contains only user-generated files
-- [x] stow fish
-- [x] install some gem packages
+- [ ] Run
+```shell
+rm ~/.config/fish/config.fish
+rm -rf ~/.config/fish/functions
+```
+
+- [ ] stow fish
+- [ ] install some gem packages
 ```shell
 sudo gem install colorls tmuxinator
 ```
-- [x] stow tmuxinator
-- [x] stow colorls
-- [x] install fisher, nvm, npm, node
+- [ ] stow tmuxinator
+- [ ] stow colorls
+- [ ] install fisher, nvm, npm, node
 ```shell
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+```shell
 fisher install jorgebucaran/nvm.fish
+```
+
+```shell
 nvm install lts
+```
+
+
+```shell
 set --universal nvm_default_version v16.15.0
 ```
 [More Details](https://rmdhnreza.my.id/install-nvm-on-fish-shell/)
-- [x] reboot
-- [x] install tldr
+- [ ] reboot
+- [ ] install tldr
 ```shell
-npm install  -g tldr
+sudo npm install  -g tldr
 ```
-- [x] Install some Fisher Packages
+- [ ] Install some Fisher Packages
 ```shell
 
 fisher install mattmc3/cd-ls.fish edc/bass sentriz/fish-pipenv jethrokuan/z 
 ```
-- [x] install omf
+- [ ] install omf
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 ```
-- [x] change omf theme
+- [ ] change omf theme
 ```shell
 omf install agnoster
+```
+
+```shell
 omf theme agnoster
 ```
 ---
@@ -162,13 +185,22 @@ omf theme agnoster
 
 
 # Neovim
-- [x] install nvim
+- [ ] install nvim
 ```shell
 sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
 ```
 
-- [x] stow neovim
-- [x] nvim -c PackerSync
+- [ ] run
+```shell
+stow neovim
+```
+
+- [ ] Run
+```shell
+nvim -c PackerSync
+
+```
+
 ---
 
 
