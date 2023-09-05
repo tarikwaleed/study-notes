@@ -41,6 +41,9 @@ ___
 - [ ] iterators
 - [ ] why there is no overloading in python
 - [ ] dunder methods
+  
+# To Research
+- [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt
 ___
 # Tips
 - To load .env
