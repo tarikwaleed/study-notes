@@ -2,4 +2,4 @@
 ```shell
 ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
 ```
-- second, add
+- second, add the public key to github or bitbucket keys
