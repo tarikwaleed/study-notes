@@ -20,5 +20,15 @@ git cat-file -p HEAD~4:registration/admin.py
 git cat-file -p c22dd60:registration/admin.py
 ```
 
+- rebase steps
+```shell
+on feature_branch
+git rebase master
+git switch master
+git rebase feature_branch
+```
+
+
+
 
 
