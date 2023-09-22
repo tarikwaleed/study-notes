@@ -22,12 +22,16 @@ git cat-file -p c22dd60:registration/admin.py
 
 ## rebase steps
 ```shell
-on feature_branch
-git rebase master
-git switch master
-git rebase feature_branch
+on `feature_branch`
+git rebase <main_branch>
+git switch <main_branch>
+git rebase <feature_branch>
 ```
 ## code review
+```shell
+git fetch
+```
+
 
 ```shell
 git checkout --track feature-xyz origin/feature-xyz
