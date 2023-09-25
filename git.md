@@ -34,7 +34,7 @@ git fetch
 
 
 ```shell
-git checkout --track feature-xyz origin/feature-xyz
+git switch -c feature/branch --track origin/feature/branch
 ```
 **OR** using my fish alias
 ```shell

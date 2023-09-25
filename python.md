@@ -43,6 +43,7 @@ ___
 - [ ] dunder methods
 - [ ] metaclasses
 - [ ] descriptors
+- [ ] dependency intection and inversion of control
 
   
 # To Research
