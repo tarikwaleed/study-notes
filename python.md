@@ -40,7 +40,7 @@ ___
 - [ ] advanced list comperhension
 - [ ] iterators
 - [ ] why there is no overloading in python
-- [ ] dunder methods
+- [ ] dunder methods, know them all
 - [ ] metaclasses
 - [ ] descriptors
 - [ ] dependency intection and inversion of control
