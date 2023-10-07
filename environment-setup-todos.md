@@ -86,33 +86,33 @@ dconf load / < ~/dotfiles/dconf/dcon
 git config --global user.name "tarikwaleed"
 git config --global user.email "tarikwaleed.tech@gmail.com"
 ```
-
-- [ ] clone repos
-```
-git clone https://github.com/tarikwaleed/study-notes.git
-```
-```
-git clone https://github.com/tarikwaleed/dotfiles.git
-```
-```
-git clone https://github.com/tarikwaleed/pk-amana-design-documents /home/tarik/work/pk/pk-amana-design-documents
-```
-```
-git clone https://github.com/tarikwaleed/secrets.git
-```
-```
-git clone https://tarikwaleed@bitbucket.org/pk-amana/backend.git /home/tarik/work/pk/backend
-```
-```
-git clone https://tarikwaleed@bitbucket.org/pk-amana/package.git /home/tarik/work/pk/package
-```
-- [ ] create new github access token
-- [ ] setup `ssh` with bitbucket
+- [ ] setup `ssh` with bitbucket and github
 - Run
 ```shell
 ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
 ```
 - add the public key to github or bitbucket keys
+
+- [ ] clone repos
+```
+git@github.com:tarikwaleed/study-notes.git /home/tarik/study-notes
+```
+```
+git@github.com:tarikwaleed/dotfiles.git /home/tarik/dotfiles
+```
+
+```
+git@github.com:tarikwaleed/secrets.git /home/tarik/secrets
+```
+```
+git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/pk-amana-design-documents
+```
+```
+git clone git@bitbucket.org:pk-amana/backend.git /home/tarik/work/pk/backend
+```
+```
+git clone git@bitbucket.org:pk-amana/package.git /home/tarik/work/pk/package
+```
 ---
 
 
