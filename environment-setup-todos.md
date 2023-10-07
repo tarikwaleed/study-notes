@@ -1,6 +1,15 @@
 # Basics
 - [ ] show password astrisks
+- Run
+```
+sudo visudo
+```
+- add `,pwfeedback` after `env_reset`at the first line
 - [ ] mount Data partition
+- [ ] change root password
+```
+sudo passwd root
+```
 **Firefox**
 - [x] sign-in to firefox
 - [x] setup extensions
