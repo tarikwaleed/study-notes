@@ -430,6 +430,13 @@ vagrant plugin install vagrant-vmware-desktop
 - docker-scan-plugin
 - docker-ce-rootless
 - docker-buildx-plugin
+- [ ] to use docker without `sudo`
+```shell
+sudo gpasswd -a username docker
+```
+```shell
+sudo service docker restart 
+```
 
 ---
 # Httpie
