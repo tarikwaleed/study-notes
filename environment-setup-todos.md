@@ -87,7 +87,19 @@ git config --global user.name "tarikwaleed"
 git config --global user.email "tarikwaleed.tech@gmail.com"
 ```
 
-- [ ] clone dotfiles
+- [ ] clone repos
+```
+git clone https://github.com/tarikwaleed/study-notes.git
+```
+```
+git clone https://github.com/tarikwaleed/dotfiles.git
+```
+```
+git clone https://github.com/tarikwaleed/pk-amana-design-documents
+```
+```
+git clone https://github.com/tarikwaleed/secrets.git
+```
 - [ ] create new github access token
 ---
 
