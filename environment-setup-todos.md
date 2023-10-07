@@ -95,17 +95,17 @@ ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
 
 - [ ] clone repos
 ```
-git@github.com:tarikwaleed/study-notes.git /home/tarik/study-notes
+git clone git@github.com:tarikwaleed/study-notes.git /home/tarik/study-notes
 ```
 ```
-git@github.com:tarikwaleed/dotfiles.git /home/tarik/dotfiles
+git clone git@github.com:tarikwaleed/dotfiles.git /home/tarik/dotfiles
 ```
 
 ```
-git@github.com:tarikwaleed/secrets.git /home/tarik/secrets
+git clone git@github.com:tarikwaleed/secrets.git /home/tarik/secrets
 ```
 ```
-git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/pk-amana-design-documents
+git clone git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/pk-amana-design-documents
 ```
 ```
 git clone git@bitbucket.org:pk-amana/backend.git /home/tarik/work/pk/backend
