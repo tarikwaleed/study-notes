@@ -25,10 +25,11 @@ ___
 - Use Jupyter Notebooks for Tutorials
 - Version Control and Code Hosting Platform
 ___
-# Topics to understand
+<h1 style="color:navy">Topics to understand</h1>
+
 - [ ] Context managers `__enter__` and `__exit__`
 
-- [ ] decorators
+- [ ] <span style="color: navy;">decorators</span>
 - [ ] classmethod
 - [ ] static method
 - [ ] @property
