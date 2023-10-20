@@ -40,7 +40,13 @@ git switch -c feature/branch --track origin/feature/branch
 ```shell
 gt feature-xyz origin/feature-xyz
 ```
+- to cherry-pick a specefic file from a specefic commit into your working directory
+```shell
+git checkout <commit_hash> -- /relative/path/to/file.py
+```
 
+<h1 style="color:navy">Topics to understand</h1>
+- [ ]  git worktree
 
 
 

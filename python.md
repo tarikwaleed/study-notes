@@ -45,6 +45,7 @@ ___
 - [ ] metaclasses
 - [ ] descriptors
 - [ ] dependency intection and inversion of control
+- [ ] ABC module, `@abstractmethod`
 
   
 # To Research
