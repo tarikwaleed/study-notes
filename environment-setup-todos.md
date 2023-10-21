@@ -14,10 +14,8 @@ sudo passwd root
 - [ ] sign-in to firefox
 - [ ] setup extensions
 - [ ] about:config -> layout.css.devPixelsPerPx=2.0
-- [ ] install FiraCode Font
-[Guide](https://github.com/tonsky/FiraCode)
-- [ ] change font of the terminal
-- [ ] Mount "Data" Partition
+
+**Mount "Data" Partition**
 - Get the id of the partition
 ```shell
 sudo blkid
@@ -48,7 +46,7 @@ To turn-off fast-boot on windows 10 do the following:
 
 - [ ] Packages
 ```bash
-sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 gnome-shell-extension-manager -y
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar -y
 ```
 
 ---
@@ -98,9 +96,6 @@ dconf reset -f /
 ```shell
 dconf load / < ~/dotfiles/dconf/dconf
 ```
-- [ ] Sanity Checks
-- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
-- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
 ---
 
 
@@ -119,7 +114,8 @@ dconf load / < ~/dotfiles/dconf/dconf
 
 
 # Terminal Emulator
-- [ ] Install a nerd font from dotfiles (Cousine)
+- [ ] stow fonts
+- [ ] Install all fonts
 - [ ] font: cousine18, theme:Tango Light
 ---
 
