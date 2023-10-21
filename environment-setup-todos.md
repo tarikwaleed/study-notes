@@ -51,34 +51,6 @@ To turn-off fast-boot on windows 10 do the following:
 sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 gnome-shell-extension-manager -y
 ```
 
-
-
----
-# Desktop Environment
-- [ ] Restore dconf 
-```shell
-dconf reset -f /
-```
-```shell
-dconf load / < ~/dotfiles/dconf/dcon
-```
-- [ ] Sanity Checks
-- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
-- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
----
-
-
-
-
-# Ubuntu Software Center
-- [ ] slack
-- [ ] Vscode
-- [ ] Teams for linux
-- [ ] Gnome Tweaks
-
-
-
-
 ---
 # Git
 - [ ] configure git
@@ -114,6 +86,34 @@ git clone git@bitbucket.org:pk-amana/backend.git /home/tarik/work/pk/backend
 git clone git@bitbucket.org:pk-amana/package.git /home/tarik/work/pk/package
 ```
 ---
+
+
+
+---
+# Desktop Environment
+- [ ] Restore dconf 
+```shell
+dconf reset -f /
+```
+```shell
+dconf load / < ~/dotfiles/dconf/dconf
+```
+- [ ] Sanity Checks
+- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
+- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
+---
+
+
+
+
+# Ubuntu Software Center
+- [ ] slack
+- [ ] Vscode
+- [ ] Teams for linux
+- [ ] Gnome Tweaks
+
+
+
 
 
 
