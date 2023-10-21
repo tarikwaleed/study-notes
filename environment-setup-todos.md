@@ -11,10 +11,10 @@ sudo visudo
 sudo passwd root
 ```
 **Firefox**
-- [x] sign-in to firefox
-- [x] setup extensions
-- [x] about:config -> layout.css.devPixelsPerPx=2.0
-- [x] install FiraCode Font
+- [ ] sign-in to firefox
+- [ ] setup extensions
+- [ ] about:config -> layout.css.devPixelsPerPx=2.0
+- [ ] install FiraCode Font
 [Guide](https://github.com/tonsky/FiraCode)
 - [ ] change font of the terminal
 - [ ] Mount "Data" Partition
