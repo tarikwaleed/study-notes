@@ -220,9 +220,7 @@ omf theme agnoster
 # Neovim
 - [ ] install nvim
 - Download from [Here](https://github.com/neovim/neovim/releases)
-```shell
-sudo dpkg -i nvim-liux64.deb
-```
+- then extract it at `Downloads`
 
 - [ ] run
 ```shell
