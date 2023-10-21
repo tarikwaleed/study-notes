@@ -219,8 +219,9 @@ omf theme agnoster
 
 # Neovim
 - [ ] install nvim
+- Download from [Here](https://github.com/neovim/neovim/releases)
 ```shell
-sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
+sudo dpkg -i nvim-liux64.deb
 ```
 
 - [ ] run
