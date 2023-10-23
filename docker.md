@@ -1,4 +1,4 @@
-# Cheat Sheet
+### Cheat Sheet
 
 - Get the IP of the container
 ```shell
@@ -16,9 +16,15 @@ docker container inspect [container_id] -f '{{.property.property}}'
 ```shell
 docker container inspect [container_id] -f '{{.State.Status}}'
 ```
-# Guides
-## Docker Volumes
-### Three types of docker volumes
+- to do some system cleanup 
+```shell
+docker system prune --all --force
+```
+
+___
+### Guides
+**Docker Volumes**
+**Three types of docker volumes**
 :one: Host volumes
 ```shell
 docker run -v /path/on/host:/path/on/container
@@ -31,7 +37,7 @@ docker run -v /path/on/container
 ```shell
 docker run -v name:/path/on/container
 ```
-### To mount a volume to a container
+**To mount a volume to a container**
 
 :one: Create a volume, and try to specify an expressive name. For example, i'll create a volume to persist `mysql` database data.
 ```shell
@@ -50,7 +56,7 @@ source=mysql-volume,
 target=/var/lib/mysql
 mysql
 ```
-### Using a bind mount
+**Using a bind mount**
 We're usually using this method to sync files between the host and the container.
 ```shell
 docker run 
@@ -74,7 +80,9 @@ docker  run --name oracle19c --network host -p 1521:1521 -p 5500:5500 -v /u01/or
 ```shell
 docker exec -ti oracle19c sqlplus system/oracle@orclpdb1
 ```
-
+______
+### Study list
+- [ ] what linux topics to study to deeply understand docker
 
 
 

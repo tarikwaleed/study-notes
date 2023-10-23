@@ -44,6 +44,19 @@ gt feature-xyz origin/feature-xyz
 ```shell
 git checkout <commit_hash> -- /relative/path/to/file.py
 ```
+- to undo the last commit
+```shell
+# Uncommit the changes
+git reset --soft HEAD~1
+
+# Completely delete the changes
+git reset --hard HEAD~1
+
+# then
+git push origin -f
+```
+
+
 
 <h1 style="color:navy">Topics to understand</h1>
 - [ ]  git worktree
