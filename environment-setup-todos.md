@@ -14,6 +14,8 @@ sudo passwd root
 - [ ] sign-in to firefox
 - [ ] setup extensions
 - [ ] about:config -> layout.css.devPixelsPerPx=2.0
+
+**Mount "Data" Partition**
 - [ ] change font of the terminal
 - [ ] Mount "Data" Partition
 - Get the id of the partition
@@ -46,36 +48,8 @@ To turn-off fast-boot on windows 10 do the following:
 
 - [ ] Packages
 ```bash
-sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar qgit -y
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 gnome-shell-extension-manager -y
 ```
-
-
-
----
-# Desktop Environment
-- [ ] Restore dconf 
-```shell
-dconf reset -f /
-```
-```shell
-dconf load / < ~/dotfiles/dconf/dcon
-```
-- [ ] Sanity Checks
-- [ ] [Disable workspace switcher popup](https://extensions.gnome.org/extension/959/disable-workspace-switcher-popup/)
-- [ ] [Auto move Window](https://extensions.gnome.org/extension/16/auto-move-windows/)
----
-
-
-
-
-# Ubuntu Software Center
-- [ ] slack
-- [ ] Vscode
-- [ ] Teams for linux
-- [ ] Gnome Tweaks
-
-
-
 
 ---
 # Git
@@ -115,9 +89,36 @@ git clone git@bitbucket.org:pk-amana/package.git /home/tarik/work/pk/package
 
 
 
+---
+# Desktop Environment
+- [ ] Restore dconf 
+```shell
+dconf reset -f /
+```
+```shell
+dconf load / < ~/dotfiles/dconf/dconf
+```
+---
+
+
+
+
+# Ubuntu Software Center
+- [ ] slack
+- [ ] Vscode
+- [ ] Teams for linux
+- [ ] Gnome Tweaks
+
+
+
+
+
+
 
 # Terminal Emulator
 - [ ] Install all fonts in `~/dotfiles/fonts`
+- [ ] stow fonts
+- [ ] Install all fonts
 - [ ] font: cousine18, theme:Tango Light
 ---
 
@@ -217,9 +218,8 @@ omf theme agnoster
 
 # Neovim
 - [ ] install nvim
-```shell
-sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/nvim-liux64.deb
-```
+- Download from [Here](https://github.com/neovim/neovim/releases)
+- then extract it at `Downloads`
 
 - [ ] run
 ```shell
