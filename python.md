@@ -12,7 +12,7 @@
 - Documentation
 - Linting and Code Formatting
 - IDE and Editor Integration
-___
+_______________________________________________
 # Best practices to document your code
 - Docstrings
 - Module-Level Comments
@@ -24,11 +24,10 @@ ___
 - Type Annotations
 - Use Jupyter Notebooks for Tutorials
 - Version Control and Code Hosting Platform
-___
+_______________________________________________
 <h1 style="color:navy">Topics to understand</h1>
 
 - [ ] Context managers `__enter__` and `__exit__`
-
 - [ ] <span style="color: navy;">decorators</span>
 - [ ] classmethod
 - [ ] static method
@@ -46,11 +45,12 @@ ___
 - [ ] descriptors
 - [ ] dependency intection and inversion of control
 - [ ] ABC module, `@abstractmethod`
-
-  
+- [ ] async python
+_______________________________________________
 # To Research
 - [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt
-___
+- [ ] better way to manage multipe virtual environments and multiple requirements files like `requirements-dev.txt` `requirements-live.txt`
+_______________________________________________
 # Tips
 - To load .env
 ```py

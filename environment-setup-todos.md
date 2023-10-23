@@ -14,8 +14,6 @@ sudo passwd root
 - [ ] sign-in to firefox
 - [ ] setup extensions
 - [ ] about:config -> layout.css.devPixelsPerPx=2.0
-- [ ] install FiraCode Font
-[Guide](https://github.com/tonsky/FiraCode)
 - [ ] change font of the terminal
 - [ ] Mount "Data" Partition
 - Get the id of the partition
@@ -48,7 +46,7 @@ To turn-off fast-boot on windows 10 do the following:
 
 - [ ] Packages
 ```bash
-sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 gnome-shell-extension-manager -y
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar qgit -y
 ```
 
 
@@ -105,7 +103,7 @@ git clone git@github.com:tarikwaleed/dotfiles.git /home/tarik/dotfiles
 git clone git@github.com:tarikwaleed/secrets.git /home/tarik/secrets
 ```
 ```
-git clone git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/pk-amana-design-documents
+git clone git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/docs
 ```
 ```
 git clone git@bitbucket.org:pk-amana/backend.git /home/tarik/work/pk/backend
@@ -119,7 +117,7 @@ git clone git@bitbucket.org:pk-amana/package.git /home/tarik/work/pk/package
 
 
 # Terminal Emulator
-- [ ] Install a nerd font from dotfiles (Cousine)
+- [ ] Install all fonts in `~/dotfiles/fonts`
 - [ ] font: cousine18, theme:Tango Light
 ---
 
@@ -425,7 +423,7 @@ vagrant plugin install vagrant-vmware-desktop
 - [ ] Extract them using `sudo dpkg -i`, in the following order:
 - docker-ce-cli
 - container.io
-- docker-ce
+- docker-ce_
 - docker-compose-plugin
 - docker-scan-plugin
 - docker-ce-rootless
