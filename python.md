@@ -51,6 +51,10 @@ _______________________________________________
 - [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt
 - [ ] better way to manage multipe virtual environments and multiple requirements files like `requirements-dev.txt` `requirements-live.txt`
 _______________________________________________
+# Links to visit
+- [ ] python's standard library documentation [here](https://docs.python.org/3.10/library/index.html#library-index)
+- [ ] The Python Standard Library. The Python Language Reference gives a more formal definition of the language  [here](https://docs.python.org/3.10/reference/index.html#reference-index)
+- [ ] Extending and Embedding the Python Interpreter and Python/C API Reference Manual [here](https://docs.python.org/3.10/extending/index.html#extending-index)
 # Tips
 - To load .env
 ```py
