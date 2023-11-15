@@ -4,4 +4,7 @@
 - [ ] async django
 - [ ] asgi
 - [ ] polling and long polling
+- [ ] django logging
+
+
 
