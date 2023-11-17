@@ -27,7 +27,7 @@ _______________________________________________
 _______________________________________________
 <h1 style="color:navy">Topics to understand</h1>
 
-- [ ] Context managers `__enter__` and `__exit__`
+- [x] Context managers `__enter__` and `__exit__`
 - [ ] <span style="color: navy;">decorators</span>
 - [ ] classmethod
 - [ ] static method
@@ -46,6 +46,7 @@ _______________________________________________
 - [ ] dependency intection and inversion of control
 - [ ] ABC module, `@abstractmethod`
 - [ ] async python
+- [ ] namespaces and scope in python [Here](https://realpython.com/python-namespaces-scope/)
 _______________________________________________
 # To Research
 - [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt
@@ -55,6 +56,7 @@ _______________________________________________
 - [ ] python's standard library documentation [here](https://docs.python.org/3.10/library/index.html#library-index)
 - [ ] The Python Standard Library. The Python Language Reference gives a more formal definition of the language  [here](https://docs.python.org/3.10/reference/index.html#reference-index)
 - [ ] Extending and Embedding the Python Interpreter and Python/C API Reference Manual [here](https://docs.python.org/3.10/extending/index.html#extending-index)
+- [ ] copying in python [Here](https://docs.python.org/3/library/copy.html#shallow-vs-deep-copy)
 # Tips
 - To load .env
 ```py
