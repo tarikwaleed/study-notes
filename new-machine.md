@@ -14,9 +14,14 @@ wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/dock
 ```shell
 touch ~/secrets/creds/new_machine_name
 ```
-- echo the machine's in the file
+- echo the machine's ip address in the file
 - create an alias for the  machine name in `config.fish`
 - [ ] configure ssh access
+- create ssh key for the machine
+```shell
+ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
+```
+
 - Run
 ```shell
 cat ~/.ssh/id_ed25519.pub | copy
