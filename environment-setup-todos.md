@@ -16,7 +16,6 @@ sudo passwd root
 - [ ] about:config -> layout.css.devPixelsPerPx=2.0
 
 **Mount "Data" Partition**
-- [ ] change font of the terminal
 - [ ] Mount "Data" Partition
 - Get the id of the partition
 ```shell
@@ -44,7 +43,9 @@ To turn-off fast-boot on windows 10 do the following:
 
 ---
 # Apt
-- [ ] `sudo apt-get update && sudo apt-get upgrade`
+- [ ] ```bash
+sudo apt-get update && sudo apt-get upgrade
+```
 
 - [ ] Packages
 ```bash
