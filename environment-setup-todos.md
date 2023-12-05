@@ -67,23 +67,12 @@ ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
 - add the public key to github or bitbucket keys
 
 - [ ] clone repos
-```
+```bash
 git clone git@github.com:tarikwaleed/study-notes.git /home/tarik/study-notes
-```
-```
 git clone git@github.com:tarikwaleed/dotfiles.git /home/tarik/dotfiles
-```
-
-```
 git clone git@github.com:tarikwaleed/secrets.git /home/tarik/secrets
-```
-```
 git clone git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/docs
-```
-```
 git clone git@bitbucket.org:pk-amana/backend.git /home/tarik/work/pk/backend
-```
-```
 git clone git@bitbucket.org:pk-amana/package.git /home/tarik/work/pk/package
 ```
 ---
