@@ -95,6 +95,7 @@ dconf load / < ~/dotfiles/dconf/dconf
 
 # Ubuntu Software Center
 - [ ] slack
+- [ ] 
 - [ ] Vscode
 - [ ] Teams for linux
 - [ ] Gnome Tweaks
