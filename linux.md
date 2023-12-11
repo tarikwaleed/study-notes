@@ -2,7 +2,7 @@
 ```shell
 find . -type f -exec cat {} \;
 ```
-### To access VM from your local machine
+**To access VM from your local machine**
 **in Virtual Machine**
 ```shell
 vim /etc/ssh/sshd_config
@@ -22,8 +22,12 @@ ip addr show
 ssh root@{vm-ip-address}
 ```
 ---
-### To know the distribution of the machine
+**To know the distribution of the machine**
 ```shell
 cat /etc/os-release
 ```
-
+**to remove all files and directories but one**
+```shell
+shopt -s extglob
+rm -rf !("filename")
+```
