@@ -43,7 +43,8 @@ To turn-off fast-boot on windows 10 do the following:
 
 ---
 # Apt
-- [ ] ```bash
+- [ ]
+```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
 
@@ -265,6 +266,11 @@ mysql -u tarikwaleed -p
 ```shell
 sudo apt-get update
 ```
+- Download this package
+```shell
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.28-1_all.deb
+```
+
 ```shell
 sudo dpkg -i /media/tarikwaleed/Data/linux-tools/tarballs/mysql-apt-config_w.x.y-z_all.deb
 ```

@@ -47,9 +47,14 @@ _______________________________________________
 - [ ] ABC module, `@abstractmethod`
 - [ ] async python
 - [ ] namespaces and scope in python [Here](https://realpython.com/python-namespaces-scope/)
+- [ ] mutabilty and immutability in python
+- [x] `args` and `**kwargs`
+
 _______________________________________________
 # To Research
-- [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt
+- [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt. 
+- [ ] chckout `pip-tools`
+
 - [ ] better way to manage multipe virtual environments and multiple requirements files like `requirements-dev.txt` `requirements-live.txt`
 _______________________________________________
 # Links to visit

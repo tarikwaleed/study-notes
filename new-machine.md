@@ -1,3 +1,9 @@
+- [ ] copy bash aliases
+- On the new machine
+
+```shell
+wget -O - https://github.com/tarikwaleed/dotfiles/raw/master/bash_aliases >> ~/.bashrc
+```
 - [ ] setup docker
 ```shell
 wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/containerd.io_1.2.13-2_amd64.deb
@@ -8,6 +14,14 @@ wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/dock
 wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/docker-compose-plugin_2.10.2~ubuntu-focal_amd64.deb
 wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/docker-scan-plugin_0.12.0~ubuntu-focal_amd64.deb
 ```
+- [ ] Extract them using `sudo dpkg -i`, in the following order:
+- docker-ce-cli
+- container.io
+- docker-ce_
+- docker-compose-plugin
+- docker-scan-plugin
+- docker-ce-rootless
+- docker-buildx-plugin
 
 - [ ] create a `creds` entry:
 - Run
@@ -28,8 +42,6 @@ cat ~/.ssh/id_ed25519.pub | copy
 ```
 - add your public key to `~/.ssh/authorized_keys` file on the new machine
 - [ ] copy bash aliases
-    >:bulb:use `wget` to download the file in `~/.bashrc`
-
 - On the new machine
 
 ```shell

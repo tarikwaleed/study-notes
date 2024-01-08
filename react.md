@@ -1,3 +1,7 @@
+<h1 style="color:navy">Topics to understand</h1>
+
+- [ ] props
+- [ ] hooks
 - [ ] virtual dom
 - [ ] Single page application
 - [ ] webpack
@@ -23,3 +27,5 @@
 - [ ] useParam( )
 - [ ] useHistory()
 - [x] whot to do when the request is pending?-> show spinner
+- [ ] what's a build system
+- [ ] what's a module bundlere
