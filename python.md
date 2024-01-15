@@ -49,6 +49,11 @@ _______________________________________________
 - [ ] namespaces and scope in python [Here](https://realpython.com/python-namespaces-scope/)
 - [ ] mutabilty and immutability in python
 - [x] `args` and `**kwargs`
+- [ ] how this syntax is possble
+```python
+    "DIRS": [BASE_DIR / "templates"],
+```
+
 
 _______________________________________________
 # To Research

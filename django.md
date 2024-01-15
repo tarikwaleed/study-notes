@@ -8,10 +8,11 @@
 - [ ] understand the directory structure of a new django app and the purpose of each file.
 - [ ] The path() function is passed four arguments, two required: route and view, and two optional: kwargs, and name. At this point, it’s worth reviewing what these arguments are for. `understand deeply`
 - [ ] `django-storage` putting static files in `s3bucket`
+- [ ] what is `SECRET_KEY` in `settings.pcmy`
 
 ### setting up static files
 1. create `src/static`
-2. create `root_directory_for_project/local-cdn/static`
+2. create `root_directory_for_project/local-cdn/static` and put it in `.gitignore`
 3.  create `my_app/static/my_app` for each app
 4.  in `settings.py`
 ```py
@@ -21,23 +22,22 @@ STATICFILES_DIRS=[
 ]
 STATIC_ROOT= BASE_DIR.parent / "local-cdn" / "static"
 ```
-5. in `core/urls.py`
+5. add the following to  `core/urls.py`
 ```python
-from django.conf import settings
-from django.contrib import admin
-from django.urls import path
-urlpatterns = [
-path( 'admin/', admin.site.urls),
 if settings.DEBUG:
-    # do not do this in production
     from django.conf.urls.static import static
-    from django.conf import settings
 
-    urlpatterns +=
-    static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 ```
+
+### setting up Templates
+1. create `src/templates`
+2. in `settings.py`, add this to the `TEMPLATES` list
+```python
+'DIRS':[ BASE_DIR / "templates"]
+```
+3. create `templates/base.html`
+
 
 
 
