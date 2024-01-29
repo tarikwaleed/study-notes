@@ -50,7 +50,7 @@ sudo apt-get update && sudo apt-get upgrade
 
 - [ ] Packages
 ```bash
-sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar apache2 gnome-shell-extension-manager -y
+sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbenv sct unrar -y
 ```
 
 ---
@@ -58,6 +58,8 @@ sudo apt-get install dconf-editor git stow mlocate xclip tmux fish ruby-full rbe
 - [ ] configure git
 ```shell
 git config --global user.name "tarikwaleed"
+```
+```shell
 git config --global user.email "tarikwaleed.tech@gmail.com"
 ```
 - [ ] setup `ssh` with bitbucket and github
@@ -72,9 +74,11 @@ ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
 git clone git@github.com:tarikwaleed/study-notes.git /home/tarik/study-notes
 git clone git@github.com:tarikwaleed/dotfiles.git /home/tarik/dotfiles
 git clone git@github.com:tarikwaleed/secrets.git /home/tarik/secrets
-git clone git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/docs
+```
+```shell
 git clone git@bitbucket.org:pk-amana/backend.git /home/tarik/work/pk/backend
 git clone git@bitbucket.org:pk-amana/package.git /home/tarik/work/pk/package
+git clone git@github.com:tarikwaleed/pk-amana-design-documents.git /home/tarik/work/pk/docs
 ```
 ---
 
