@@ -159,6 +159,7 @@ echo $SHELL
 ```shell
 rm ~/.config/fish/config.fish
 rm -rf ~/.config/fish/functions
+rm -rf ~/.config/fish/fish_variables
 ```
 
 - [ ] stow fish
