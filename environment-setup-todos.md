@@ -28,6 +28,9 @@ UUID=68342E8E342E5F76 /media/tarik/Data ntfs defaults 0 0
 ```shell
 sudo mount -a
 ```
+```
+sudo findmnt --verify
+```
 
 - [ ] Fix Read-only filesystem
 ```
@@ -92,6 +95,10 @@ dconf reset -f /
 ```
 ```shell
 dconf load / < ~/dotfiles/dconf/dconf
+```
+- if you made any changes, don't forget to dump the changes using the following command
+```
+dconf dump / > dconf-settings
 ```
 ---
 
@@ -452,6 +459,19 @@ apt update
 ```shell
 apt install httpie
 ```
+
+# FortiVPN
+- [ ] download from [Here](https://www.fortinet.com/support/product-downloads)
+- [ ] install dependencies
+```shell
+install libappindicator1 libayatana-appindicator1 libnss3-tools
+```
+
+```shell
+dpi forticlient_vpn_7.2.2.0753_amd64.deb
+```
+
+
 
 
 # VmWare Player

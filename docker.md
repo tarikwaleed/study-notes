@@ -1,4 +1,12 @@
 ### Cheat Sheet
+:bulb: if you got this error
+>`Error response from daemon: cgroups: cgroup mountpoint does not exist: unknown`
+run those two commands:
+
+```shell
+sudo mkdir /sys/fs/cgroup/systemd
+sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+```
 
 - Get the IP of the container
 ```shell
