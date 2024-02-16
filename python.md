@@ -1,7 +1,13 @@
 <h1 style="color:navy">Topics to understand</h1>
 
 - [x] Context managers `__enter__` and `__exit__`
-- [ ] <span style="color: navy;">decorators</span>
+- [ ] decorators
+    - [x] first-class citizens
+    - [ ] inner/nested functions behaviour
+    - [ ] higher order functions
+    - [ ] understand the OOP's design pattern `decorator pattern` in JAVA
+    - [ ] closures and closures factories
+    - [ ] namespaces and scope in python
 - [ ] classmethod
 - [ ] static method
 - [ ] @property
@@ -18,8 +24,8 @@
 - [ ] descriptors
 - [ ] dependency intection and inversion of control
 - [ ] ABC module, `@abstractmethod`
+- [ ] `logging` module
 - [ ] async python
-- [ ] namespaces and scope in python [Here](https://realpython.com/python-namespaces-scope/)
 - [ ] mutabilty and immutability in python
 - [x] `args` and `**kwargs`
 - [ ] how this syntax is possble

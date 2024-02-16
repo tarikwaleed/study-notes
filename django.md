@@ -9,6 +9,7 @@
 - [ ] The path() function is passed four arguments, two required: route and view, and two optional: kwargs, and name. At this point, it’s worth reviewing what these arguments are for. `understand deeply`
 - [ ] `django-storage` putting static files in `s3bucket`
 - [ ] what is `SECRET_KEY` in `settings.pcmy`
+- [ ] template loaders [here](https://docs.djangoproject.com/en/4.2/ref/templates/api/#django.template.loaders.cached.Loader)
 
 ### setting up static files
 1. create `src/static`
