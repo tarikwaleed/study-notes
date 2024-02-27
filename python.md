@@ -3,11 +3,29 @@
 - [x] Context managers `__enter__` and `__exit__`
 - [ ] decorators
     - [x] first-class citizens
-    - [ ] inner/nested functions behaviour
-    - [ ] higher order functions
+    - [x] inner/nested functions behaviour
+    - [x] higher order functions
     - [ ] understand the OOP's design pattern `decorator pattern` in JAVA
     - [ ] closures and closures factories
     - [ ] namespaces and scope in python
+    **if you understod this so you understood decorators**
+    ```py
+    def integer_validator(param_name):
+        def decorator(func):
+            def wrapper(*args, **kwargs):
+                try:
+                    param_value = kwargs.get(param_name)
+                    if not param_value.isdigit():
+                        return jsonify({'error': f'Invalid {param_name}'}), 400
+                    return func(*args, **{param_name: int(param_value)})
+                except Exception as e:
+                    return jsonify({'error': str(e)}), 500
+
+            return wrapper
+        return decorator
+    
+    ```
+    
 - [ ] classmethod
 - [ ] static method
 - [ ] @property
@@ -32,7 +50,9 @@
 ```python
     "DIRS": [BASE_DIR / "templates"],
 ```
-- []  `late binding` vs `Duck typing`
+- [ ]  `late binding` vs `Duck typing`
+- [ ] `functools` module
+- [ ] `global` and `nonlocal`
 
 
 _______________________________________________

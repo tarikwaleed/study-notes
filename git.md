@@ -59,8 +59,15 @@ git push origin -f
 
 
 <h1 style="color:navy">Topics to understand</h1>
+
 - [ ]  git worktree
 
+<h1 style="color:navy">Problems i've solved</h1>
+
+**The Divergant histories problem**
+> the situation is 
+i have 2 remoets one called pk(on github) and the other is orign (on bitbucket)
+I pushed to pk once with the commit hash f326c0 and didn't push again and worked on the project and I was pushing all the times to origin on bitbucket . now I want to push to pk , what problems could occur and how to resolve them?
 
 
 
