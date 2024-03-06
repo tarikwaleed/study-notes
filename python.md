@@ -8,6 +8,7 @@
     - [ ] understand the OOP's design pattern `decorator pattern` in JAVA
     - [ ] closures and closures factories
     - [ ] namespaces and scope in python
+    - [ ] understand flask decorators
     **if you understod this so you understood decorators**
     ```py
     def integer_validator(param_name):
@@ -53,12 +54,84 @@
 - [ ]  `late binding` vs `Duck typing`
 - [ ] `functools` module
 - [ ] `global` and `nonlocal`
+- [ ] `globals()` in python
+- [ ] object introspection
+- [ ] `timeit` module
+- [ ] advanced usage of f-string and f-string flags
+- [ ] factory methods 
+
+```python
+@classmethod
+def unit_circle(cls):
+    """Factory method creating a circle with radius 1"""
+    return cls(1)
+```
+- [ ] Deeply understand python's OOP
+```py
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    # mutable property
+    @property
+    def radius(self):
+        """Get value of radius"""
+        return self._radius
+
+    @radius.setter
+    def radius(self, value):
+        """Set radius, raise error if negative"""
+        if value >= 0:
+            self._radius = value
+        else:
+            raise ValueError("radius must be non-negative")
+
+    # immutable property
+    @property
+    def area(self):
+        """Calculate area inside circle"""
+        return self.pi() * self.radius**2
+
+    # regular method
+    def cylinder_volume(self, height):
+        """Calculate volume of cylinder with circle as base"""
+        return self.area * height
+
+    # class method
+    @classmethod
+    def unit_circle(cls):
+        """Factory method creating a circle with radius 1"""
+        return cls(1)
+
+    # static methods
+    @staticmethod
+    def pi():
+        """Value of π, could use math.pi instead though"""
+        return 3.1415926535
+```
+- [ ] `dataclasses` module in python
+- how this syntax is possible
+```py
+from dataclasses import dataclass
+
+@dataclass
+class PlayingCard:
+    rank: str
+    suit: str
+```
+- [ ] class decorators, how classes are presented in memory and how they're decorated!!
+
+
+
+
+
 
 
 _______________________________________________
 # To Research
 - [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt. 
 - [ ] chckout `pip-tools`
+
 
 - [ ] better way to manage multipe virtual environments and multiple requirements files like `requirements-dev.txt` `requirements-live.txt`
 _______________________________________________
