@@ -1,4 +1,4 @@
-<h1 style="color:navy">Topics to understand</h1>
+# Topics to understand
 
 - [x] Context managers `__enter__` and `__exit__`
 - [ ] decorators
@@ -34,7 +34,7 @@
 - [ ] yield
 - [ ] generators
 - [ ] map,filter,reduce,enumerate,zip,counter, ...
-- [ ] lambda function
+- [ ] lambda functions
 - [ ] advanced list comperhension
 - [ ] iterators
 - [ ] why there is no overloading in python
@@ -120,6 +120,7 @@ class PlayingCard:
     suit: str
 ```
 - [ ] class decorators, how classes are presented in memory and how they're decorated!!
+- [ ] `any()` in python
 
 
 
@@ -134,6 +135,8 @@ _______________________________________________
 
 
 - [ ] better way to manage multipe virtual environments and multiple requirements files like `requirements-dev.txt` `requirements-live.txt`
+- [ ] how to acheive public,private,protected in python inheritance
+- [ ] what happens when you inherete from a class and what is `super().__init__()`
 _______________________________________________
 # Links to visit
 - [ ] python's standard library documentation [here](https://docs.python.org/3.10/library/index.html#library-index)
@@ -175,3 +178,25 @@ _______________________________________________
 - Use Jupyter Notebooks for Tutorials
 - Version Control and Code Hosting Platform
 _______________________________________________
+# common errors i encounter
+**error**
+- you may encounter this error when you install requirements file
+- `ERROR: Could not build wheels for backports.zoneinfo, which is required to install pyproject.toml-based projects`
+
+**solution**
+Edit your requirements.txt file
+
+FROM:
+
+`backports.zoneinfo==0.2.1`
+
+TO:
+
+`backports.zoneinfo;python_version<"3.9"`
+
+---
+# Interview questions
+- [ ] what is the difference between concurrency and multiprocessing in python. how it works in python
+- [ ] if i have a file on disk and i don't 2 threads to access or write on this file at the same time, how would you handle that. how would you implement this feature yourself withoug using any python features like context managers.
+- [ ] how hashing works
+- [ ] can the key of the dictionary in python be any data type other than strings

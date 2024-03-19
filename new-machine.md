@@ -44,7 +44,7 @@ wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/dock
 - [ ] configure ssh access
 - create ssh key for the machine
 ```shell
-ssh-keygen -t ed25519 -C tarikwaleed.tech@gmail.com
+ssh-keygen -t ed25519 -C machine-name@email.com
 ```
 
 - Run

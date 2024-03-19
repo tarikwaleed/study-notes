@@ -1,3 +1,0 @@
-- [ ] interface
-- [ ] constructors
-- [ ] interface vs. class vs. type
