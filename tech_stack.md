@@ -1,0 +1,19 @@
+- Next.js
+- Nest.js
+- TailwindCSS
+- vercel
+- flutter
+- supabase
+- planteScale
+- clerk
+- prisma
+- postHog
+- Astro
+- Netlify
+- zustand
+- tankStack Query
+- Railway
+- render
+- shadcnui
+- v0.dev
+- radix

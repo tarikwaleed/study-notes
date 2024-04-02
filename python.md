@@ -130,7 +130,7 @@ class PlayingCard:
 
 _______________________________________________
 # To Research
-- [ ] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt. 
+- [x] is there a better way to manage dependencies other thatn `requirements.txt`. Is Pipfile better that requirements.txt. 
 - [ ] chckout `pip-tools`
 
 
@@ -150,6 +150,11 @@ from dotenv import find_dotenv, load_dotenv
 
 load_dotenv()
 load_dotenv(find_dotenv(), override=True)
+```
+- then to load a varialbe you simply write
+```py
+import os
+variable=os.getnev('VARIABLE_NAME')
 ```
 # Best pracices to structure your project
 - Virtual Environments
