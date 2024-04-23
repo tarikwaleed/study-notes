@@ -148,7 +148,6 @@ _______________________________________________
 ```py
 from dotenv import find_dotenv, load_dotenv
 
-load_dotenv()
 load_dotenv(find_dotenv(), override=True)
 ```
 - then to load a varialbe you simply write

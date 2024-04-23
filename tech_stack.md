@@ -6,10 +6,11 @@
 - supabase
 - planteScale
 - clerk
+- kinde
 - prisma
 - postHog
 - Astro
-- Netlify
+- Netliy
 - zustand
 - tankStack Query
 - Railway
@@ -17,3 +18,11 @@
 - shadcnui
 - v0.dev
 - radix
+- workik
+- t3
+- zod
+- react-hook-form
+- react-icons
+- heroicons & heroicons-react
+- lucide & lucide-react
+- nivo

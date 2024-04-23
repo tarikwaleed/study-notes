@@ -487,8 +487,8 @@ sudo chmod a+x VMware-Player-6.0.3-1895310.x86_64.bundle
 ```shell
 sudo ./VMware-Player-6.0.3-1895310.x86_64.bundle
 ```
-## If you ran into problems
-### Problem1
+**If you ran into problems
+**Problem1**
 >"Cannot open /dev/vmmon: No such file or directory" error when powering on a VM (2146460)
 
 **solution**
@@ -509,5 +509,14 @@ sudo mokutil --import MOK.der
 ```
 
 
-### Problem2
+**Problem2**
 [Guide](https://communities.vmware.com/t5/VMware-Workstation-Player/ubuntu-22-04-install-vm-workstation-error/td-p/2905277)
+
+# Ngrok
+```shell
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | \
+  sudo gpg --dearmor -o /etc/apt/keyrings/ngrok.gpg && \
+  echo "deb [signed-by=/etc/apt/keyrings/ngrok.gpg] https://ngrok-agent.s3.amazonaws.com buster main" | \
+  sudo tee /etc/apt/sources.list.d/ngrok.list && \
+  sudo apt update && sudo apt install ngrok
+```

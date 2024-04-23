@@ -21,7 +21,7 @@ source ~/.bashrc
 
 - [ ] setup docker
 ```shell
-mkdir ~/docker-packges && cd ~/docker-packages
+mkdir ~/docker-packages && cd ~/docker-packages
 ```
 ```shell
 wget https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/containerd.io_1.2.13-2_amd64.deb
@@ -55,5 +55,5 @@ cat ~/.ssh/id_ed25519.pub | copy
 
 **copy `.env` file using scp**
 ```shell
-scp /path/to/local/.env username@remote-server:/path/to/remote/directory
+scp ./app/.env.app.production ubuntu@(cat ~/secrets/creds/zubi-instance-ip):/home/ubuntu/zubi-law-django/app
 ```
