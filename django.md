@@ -16,7 +16,14 @@
 - [ ] what happens if 2 requests came to the dataabse in the same time
 - [ ] queuing in django (celery)
 - [ ] redis caching
-- [ ] 
+- [ ] understand those queries
+
+```py
+num_tested_cells = tests.aggregate(Sum('num_tested_cells'))['num_tested_cells__sum'] or 0
+num_affected_cells = tests.aggregate(Sum('num_affected_cells'))['num_affected_cells__sum'] or 0
+num_affected_columns = tests.values('column_name').annotate(count=Count('column_name')).count()
+```
+
 
 ### setting up static files
 1. create `src/static`

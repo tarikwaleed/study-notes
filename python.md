@@ -27,7 +27,9 @@
     
     ```
     
+
 - [ ] classmethod
+- [ ] `typing` module
 - [ ] static method
 - [ ] @property
 - [ ] @namesetter
