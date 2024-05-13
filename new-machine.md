@@ -57,3 +57,47 @@ cat ~/.ssh/id_ed25519.pub | copy
 ```shell
 scp ./app/.env.app.production ubuntu@(cat ~/secrets/creds/zubi-instance-ip):/home/ubuntu/zubi-law-django/app
 ```
+**To install `nodejs` on the server**
+```shell
+cd ~
+curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+```
+```shell
+sudo bash nodesource_setup.sh
+```
+```shell
+sudo apt install nodejs
+```
+```shell
+node -v
+```
+
+
+**To install `pm2`**
+```shell
+npm install pm2 -g
+```
+
+
+**To run `django` app with `pm2`**
+```json
+{
+    "apps": [
+        {
+            "name": "zubi-django-pm2",
+            "script": "/root/zubi-law-django/app/src/manage.py",
+            "args": [
+                "runserver",
+                "0.0.0.0:8000"
+            ],
+            "exec_mode": "fork",
+            "instances": "1",
+            "wait_ready": true,
+            "autorestart": false,
+            "max_restarts": 5,
+            "interpreter": "/root/.local/share/virtualenvs/app-KpfsMCDG/bin/python"
+        }
+    ]
+}
+
+```

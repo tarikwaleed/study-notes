@@ -45,7 +45,7 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 ```
 
-### setting up Templates
+**setting up Templates**
 1. create `src/templates`
 2. in `settings.py`, add this to the `TEMPLATES` list
 ```python
@@ -55,4 +55,16 @@ if settings.DEBUG:
 
 
 
+**how to parse request body**
+```py
+body_unicode = request.body.decode("utf-8")
+body = json.loads(body_unicode)
+property = body["property"]
+
+```
+
+**to capture query params**
+```shell
+param =request.GET.get("param_name")
+```
 

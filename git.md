@@ -20,13 +20,20 @@ git cat-file -p HEAD~4:registration/admin.py
 git cat-file -p c22dd60:registration/admin.py
 ```
 
-- rebase steps
+- to rebase feature branch
 ```shell
 on `feature_branch`
 git rebase <main_branch>
 git switch <main_branch>
 git rebase <feature_branch>
 ```
+
+- to delete branch locally and remote
+```shell
+git branch -D <branch-name>
+git push origin --delete <branch-name>
+```
+
 - code review
 ```shell
 git fetch
