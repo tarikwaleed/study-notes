@@ -1,6 +1,12 @@
 <h1 style="color:navy">Topics to understand</h1>
 
 - [ ] props
+- [ ] useRef
+- [ ] setTimeOut
+- [ ] js event queue(breka video)
+- [ ] what is `$` in js
+- [ ] window.addEventListener
+- [ ] `ref` attribute in `input` html element
 - [ ] hooks
 - [ ] virtual dom
 - [ ] Single page application

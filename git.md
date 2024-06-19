@@ -1,4 +1,8 @@
-# Cheat Sheet
+
+## Topics to understand
+- [ ]  git worktree
+- [ ]  merge strategies
+## Cheat Sheet
 - delete branch locally
 `git branch -d localBranchName`
 - delete branch remotely
@@ -65,12 +69,8 @@ git push origin -f
 
 
 
-<h1 style="color:navy">Topics to understand</h1>
 
-- [ ]  git worktree
-
-<h1 style="color:navy">Problems i've solved</h1>
-
+## Problems i've solved
 **The Divergant histories problem**
 > the situation is 
 i have 2 remoets one called pk(on github) and the other is orign (on bitbucket)

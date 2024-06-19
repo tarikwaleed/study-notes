@@ -53,6 +53,12 @@ cat ~/.ssh/id_ed25519.pub | copy
 ```
 - add your public key to `~/.ssh/authorized_keys` file on the new machine
 
+- [ ] configure git
+```shell
+git config --global user.name "new_machine_name"
+git config --global user.email newmachine@gmail.com
+```
+
 **copy `.env` file using scp**
 ```shell
 scp ./app/.env.app.production ubuntu@(cat ~/secrets/creds/zubi-instance-ip):/home/ubuntu/zubi-law-django/app
@@ -72,6 +78,22 @@ sudo apt install nodejs
 node -v
 ```
 
+**To install `python3.10` on the server**
+```shell
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+```shell
+sudo apt install python3.x #change x to the python version you like to install
+```
+```shell
+apt install python3-pip
+```
+```shell
+pip install pipenv
+```
+
+
+
 
 **To install `pm2`**
 ```shell
@@ -80,6 +102,7 @@ npm install pm2 -g
 
 
 **To run `django` app with `pm2`**
+
 ```json
 {
     "apps": [

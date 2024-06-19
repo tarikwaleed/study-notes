@@ -146,7 +146,7 @@ _______________________________________________
 - [ ] Extending and Embedding the Python Interpreter and Python/C API Reference Manual [here](https://docs.python.org/3.10/extending/index.html#extending-index)
 - [ ] copying in python [Here](https://docs.python.org/3/library/copy.html#shallow-vs-deep-copy)
 # Tips
-- To load .env
+## To load .env
 ```py
 from dotenv import find_dotenv, load_dotenv
 

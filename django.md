@@ -57,6 +57,9 @@ if settings.DEBUG:
 
 **how to parse request body**
 ```py
+request.data.get("field_name")
+```
+```py
 body_unicode = request.body.decode("utf-8")
 body = json.loads(body_unicode)
 property = body["property"]
